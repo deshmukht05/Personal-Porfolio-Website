@@ -45,7 +45,7 @@ export const About = () => {
         {/* About Content */}
         <div className="about-grid">
           <div className="about-left">
-            <img src="profile.webp" alt="Profile" className="about-img" />
+            <img src="profile.webp" loading="lazzy" alt="Profile" className="about-img" />
 
             <div className="about-skills-wrapper">
               {extraSkills.map((curEle, index) => {
