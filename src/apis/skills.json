@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title" : "Frontend",
+        "subtitle" : "Building responsive, interactive interfaces people enjoy using.",
+        "skills" : [
+            {
+                "content": "React"
+            },
+            {
+                "content" : "HTML5"
+            },
+            {
+                "content" : "CSS3"
+            },
+            {
+                "content" : "Tailwind CSS"
+            },
+            {
+                "content" : "JavaScript"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title" : "Backend & Database",
+        "subtitle" : "Creating the data and server foundations behind web applications.",
+        "skills" : [
+            {
+                "content": "React"
+            },
+            {
+                "content" : "HTML5"
+            },
+            {
+                "content" : "CSS3"
+            },
+            {
+                "content" : "Tailwind CSS"
+            },
+            {
+                "content" : "JavaScript"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title" : "Developer Tools",
+        "subtitle" : "Managing reliable workflows, collaboration, and project delivery.",
+        "skills" : [
+            {
+                "content": "React"
+            },
+            {
+                "content" : "HTML5"
+            },
+            {
+                "content" : "CSS3"
+            },
+            {
+                "content" : "Tailwind CSS"
+            },
+            {
+                "content" : "JavaScript"
+            }
+        ]
+    }
+]

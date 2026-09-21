@@ -56,7 +56,7 @@ body {
   @apply text-lg md:text-lg text-[#d0e5ff] text-shadow-2xs;
 }
 
-/* Active Tab */
+/* ================= Active Tab ================= */
 .active-tab {
   @apply flex items-center justify-center p-2 rounded-full bg-[#c8d6ff] text-[#11131c] transition-all duration-300 cursor-pointer;
 }
@@ -70,9 +70,9 @@ body {
   @apply flex items-center justify-center p-2 text-gray-400 hover:text-gray-200 transition-all duration-300;
 }
 
-/* Navbar */
+/* ================= Navbar ================= */
 .header-container {
-  @apply w-full py-10 place-items-center;
+  @apply w-full py-10 place-items-center bg-transparent;
 }
 
 .navbar {
@@ -93,14 +93,10 @@ h1 {
   @apply text-[#d0e5ff] text-4xl;
 }
 
-/* Hero Section */
+/* ================= Hero Section ================= */
 .hero-section {
   @apply flex md:mb-10 md:mt-10 flex-col gap-8 md:gap-10 items-center justify-center;
 }
-/* 
-.bg-circle {
-  @apply md:absolute md:self-center md:m-auto md:blur-3xl md:w-2/5 md:h-2/5 md:bg-[#3B82F6] md:rounded-full md:opacity-15;
-} */
 
 .available-online {
   @apply flex w-fit m-auto py-2 px-4 md:px-5  items-center gap-3 justify-center font-mono;
@@ -118,7 +114,7 @@ h1 {
   @apply text-white text-[12px] md:text-sm font-medium tracking-wide;
 }
 
-/* Heading */
+/* ================= Heading ================= */
 .heading {
   @apply text-center;
 }
@@ -155,87 +151,7 @@ h1 {
   @apply text-[12px] md:text-sm text-gray-400 font-medium tracking-wide;
 }
 
-/* Animation Scroll Bar */
-/* Parent — provides the shared center for both bars */
- .animation-scroll-wrapper {
-  @apply relative overflow-hidden;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  height: 160px;
-}
-
-/* Base styles shared by both bars */
-.animation-scroll-bar1,
-.animation-scroll-bar2 {
-  @apply absolute top-1/2 left-1/2 overflow-hidden 
-         bg-[#090a0f] outline-1 outline-[#222534] py-3;
-  width: 100vw;
-  transform-origin: center center;
-}
-
-/* Front bar — rotated counter-clockwise, faster */
-.animation-scroll-bar1 {
-  transform: translate(-50%, -50%) rotate(-3deg);
-  z-index: 10;
-}
-
-/* Back bar — rotated clockwise, slower, dimmed */
-.animation-scroll-bar2 {
-  transform: translate(-50%, -50%) rotate(3deg);
-  opacity: 0.3;
-  z-index: 0;
-}
-
-.overlay-fade-1 {
-  @apply absolute left-0 top-0 h-full w-16 md:w-32 
-         bg-gradient-to-r from-[#090a0f] to-transparent 
-         z-10 pointer-events-none;
-}
-
-.overlay-fade-2 {
-  @apply absolute right-0 top-0 h-full w-16 md:w-32 
-         bg-gradient-to-l from-[#090a0f] to-transparent 
-         z-10 pointer-events-none;
-}
-
-.animation-text {
-  @apply shrink-0 py-4 text-[#d0e5ff] font-medium 
-         text-[12px] md:text-[15px] whitespace-nowrap;
-}
-
-@layer utilities {
-  @keyframes scroll-left {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-
-  @keyframes scroll-right {
-    0% {
-      transform: translateX(-50%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .animate-scroll-fast {
-    animation: scroll-left 35s linear infinite;
-    width: max-content;
-    will-change: transform;
-  }
-
-  .animate-scroll-slow {
-    animation: scroll-right 45s linear infinite;
-    width: max-content;
-    will-change: transform;
-  }
-}
-
-/* About Page */
+/* ================= About Page ================= */
 .about-section {
   @apply flex flex-col gap-8 md:gap-10 mb-10 md:mt-30;
 }
@@ -275,11 +191,11 @@ h1 {
 }
 
 .about-span1 {
-  @apply text-gray-100 shadow-gray-100 tracking-tight text-5xl font-semibold;
+  @apply text-gray-100 shadow-gray-100 tracking-tight text-6xl font-semibold;
 }
 
 .about-span2 {
-  @apply text-[#d0e5ff] text-5xl font-bodoni tracking-tighter font-bold;
+  @apply text-[#d0e5ff] text-6xl font-bodoni tracking-tight font-bold;
 }
 
 .about-para p {
@@ -315,7 +231,43 @@ h1 {
   @apply py-2 px-3 text-[#c8d6ff] tracking-wider font-semibold text-[10px] md:text-[11px] bg-[#11131c] outline-1 outline-gray-600 rounded-full;
 }
 
-/* Error Page */
+/* ================= Skills ================= */
+.skills {
+  @apply w-screen h-auto bg-[#10121b] mt-30 mb-10 py-20;
+}
+
+.skills-section {
+  @apply flex flex-col gap-10;
+}
+
+.skills-span1 {
+  @apply text-[#d0e5ff] text-7xl font-bodoni tracking-tight font-bold;
+  padding: 0 10px 0 0;
+}
+
+.skill-grid {
+  @apply flex justify-between gap-12;
+}
+
+.skill-card {
+  @apply outline-2 outline-gray-600 rounded-xl p-8 flex flex-col gap-5;
+}
+
+.skill-card:hover {
+  @apply -translate-y-1.5 transition-all duration-400;
+}
+
+.skill-card h3 {
+  @apply text-2xl text-[#c8d6ff] font-bold tracking-tight;
+}
+
+/* ================= Projects ================= */
+
+/* ================= Experience ================= */
+
+/* ================= Contact ================= */
+
+/* ================= Error Page ================= */
 .error-page {
   @apply flex flex-col m-auto;
 }
@@ -336,7 +288,7 @@ h1 {
   @apply text-[12px] md:text-lg font-medium bg-gray-900 outline-2 outline-gray-600 text-white rounded-full px-4 py-2;
 }
 
-/* Footer */
+/* ================= Footer ================= */
 .footer-container {
   @apply w-full bg-[#11131c] mt-auto;
 }
@@ -363,4 +315,252 @@ footer {
 
 .footer-nav {
   @apply text-[12px] md:text-sm font-medium hover:text-white transition-all;
+}
+
+/* ================= Animation Scroll Bar ================= */
+.animation-scroll-wrapper {
+  @apply relative overflow-hidden;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  height: 160px;
+}
+
+/* Base styles shared by both bars */
+.animation-scroll-bar1,
+.animation-scroll-bar2 {
+  @apply absolute top-1/2 left-1/2 overflow-hidden 
+          outline-1 outline-[#222534] py-3;
+  @apply bg-[#090a0f]/5 backdrop-blur-lg;
+  width: 100vw;
+  transform-origin: center center;
+}
+
+.animation-scroll-bar1 {
+  transform: translate(-50%, -50%) rotate(-3deg);
+  z-index: 10;
+}
+
+.animation-scroll-bar2 {
+  transform: translate(-50%, -50%) rotate(3deg);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.overlay-fade-1 {
+  @apply absolute left-0 top-0 h-full w-16 md:w-32 
+         bg-gradient-to-r from-[#090a0f] to-transparent 
+         z-10 pointer-events-none;
+}
+
+.overlay-fade-2 {
+  @apply absolute right-0 top-0 h-full w-16 md:w-32 
+         bg-gradient-to-l from-[#090a0f] to-transparent 
+         z-10 pointer-events-none;
+}
+
+.animation-text {
+  @apply shrink-0 py-4 text-[#d0e5ff] font-mono
+         text-[12px] md:text-[15px] whitespace-nowrap;
+}
+
+@layer utilities {
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .animate-scroll-fast {
+    animation: scroll-left 35s linear infinite;
+    width: max-content;
+    will-change: transform;
+  }
+
+  .animate-scroll-slow {
+    animation: scroll-right 45s linear infinite;
+    width: max-content;
+    will-change: transform;
+  }
+}
+
+/* ================= Orbit Background (Circular) ================= */
+.orbit-scene {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #090a0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.orbit-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 800px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle at center,
+    rgba(139, 92, 246, 0.4) 10%,
+    rgba(139, 92, 246, 0.15) 40%,
+    transparent 70%
+  );
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Circular orbit container */
+.orbit-ellipse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%) scale(var(--orbit-scale, 1));
+  pointer-events: none;
+  z-index: 2;
+}
+
+.orbit-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  animation: orbit-spin var(--duration) linear infinite;
+}
+
+/* Circular path line — visible ring for each orbit */
+.orbit-path {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--radius) * 2);
+  height: calc(var(--radius) * 2);
+  margin-left: calc(var(--radius) * -1);
+  margin-top: calc(var(--radius) * -1);
+  border-radius: 9999px;
+  border: 1px dashed rgba(200, 214, 255, 0.12);
+  pointer-events: none;
+  /* No animation — the line stays still while icons revolve */
+}
+
+/* Position each icon on the circular path */
+.orbit-slot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  transform: rotate(var(--angle)) translateX(var(--radius));
+  transform-origin: 0 0;
+}
+
+/* Un-tilt the icon */
+.orbit-counter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  transform: rotate(calc(-1 * var(--angle)));
+  transform-origin: 0 0;
+}
+
+/* The visible icon card */
+.orbit-icon-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 22, 34, 0.55); /* lower bg opacity */
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  color: #d0e5ff;
+  opacity: 0.65; /* ↓ icon opacity (was 1) */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  /* Counter the ring spin so the icon stays upright */
+  animation: orbit-counter var(--duration) linear infinite;
+  transform-origin: center center;
+  transition: opacity 0.3s ease;
+}
+
+/* Optional: brighten on hover for interactivity */
+.orbit-icon-box:hover {
+  opacity: 0.7;
+}
+
+@keyframes orbit-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit-counter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Content layer */
+.orbit-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+/* Responsive scaling */
+@media (max-width: 1024px) {
+  .orbit-scene {
+    --orbit-scale: 0.8;
+  }
+}
+@media (max-width: 768px) {
+  .orbit-scene {
+    --orbit-scale: 0.6;
+  }
+}
+@media (max-width: 480px) {
+  .orbit-scene {
+    --orbit-scale: 0.45;
+  }
+  .orbit-icon-box {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
 }
