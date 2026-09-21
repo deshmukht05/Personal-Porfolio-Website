@@ -11,6 +11,7 @@ The frontend was developed using ReactJS with reusable components, organized pag
 ## Live Demo
 
 Visit the live website:
+https://personal-portfolio-website-eta-hazel.vercel.app/
 
 ## Features
 
