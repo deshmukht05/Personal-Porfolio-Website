@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://db.onlinewebfonts.com/c/7b2f5f338a51366d6dacac3652cd3403?family=Bodoni+Seventytwo+ITC+Bold+Italic");
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-plus: "Plus Jakarta Sans", sans-serif;
+  --font-bodoni: "Bodoni Seventytwo ITC Bold Italic", serif;
+}
+
+body {
+  @apply bg-[#090a0f] font-plus h-full m-0 p-0;
+}
+
+#root {
+  @apply min-h-screen flex flex-col;
+  overflow-x: hidden;
+}
+
+.container {
+  @apply md:max-w-[1250px] mx-auto px-6;
+}
+
+.primary-btn {
+  @apply py-3 px-5 bg-transparent;
+}
+
+.logo {
+  @apply text-white text-lg tracking-wide font-extrabold cursor-pointer;
+}
+
+.gradient {
+  @apply text-transparent;
+  background: linear-gradient(105deg, #4084f1, #803ef2, #4084f1);
+  background-clip: text;
+}
+
+.primary-btn {
+  @apply text-[12px] md:text-[16px] bg-[#d0e5ff] font-medium flex items-center gap-2 rounded-xl px-4 py-2;
+  /* background: linear-gradient(105deg, #3b82f6, #7c3aed); */
+}
+
+.hero-resume-icon {
+  @apply text-lg md:text-lg text-shadow-2xs;
+}
+
+.secondary-btn {
+  @apply px-4 sm:px-8 sm:py-3;
+}
+
+.outline-btn {
+  @apply text-[12px] md:text-[16px] font-medium flex items-center gap-2 bg-[#11131c] outline-2 outline-[#222534] text-[#d0e5ff] rounded-xl px-4 py-2;
+}
+
+.hero-icon {
+  @apply text-lg md:text-lg text-[#d0e5ff] text-shadow-2xs;
+}
+
+/* Active Tab */
+.active-tab {
+  @apply flex items-center justify-center p-2 rounded-full bg-[#c8d6ff] text-[#11131c] transition-all duration-300 cursor-pointer;
+}
+
+.active-tab svg {
+  color: #11131c;
+  stroke: #11131c;
+}
+
+.inactive-tab {
+  @apply flex items-center justify-center p-2 text-gray-400 hover:text-gray-200 transition-all duration-300;
+}
+
+/* Navbar */
+.header-container {
+  @apply w-full py-10 place-items-center;
+}
+
+.navbar {
+  @apply fixed top-4 left-1/2 -translate-x-1/2 z-50 max-w-fit px-4 py-3 bg-[#11131c] rounded-full outline-2 outline-[#222534]/5;
+
+  @apply bg-[#c8d6ff]/5 backdrop-blur-lg;
+}
+
+ul {
+  @apply flex justify-center items-center gap-8;
+}
+
+li {
+  @apply text-gray-400 text-sm font-medium tracking-wide;
+}
+
+h1 {
+  @apply text-[#d0e5ff] text-4xl;
+}
+
+/* Hero Section */
+.hero-section {
+  @apply flex md:mb-10 md:mt-10 flex-col gap-8 md:gap-10 items-center justify-center;
+}
+/* 
+.bg-circle {
+  @apply md:absolute md:self-center md:m-auto md:blur-3xl md:w-2/5 md:h-2/5 md:bg-[#3B82F6] md:rounded-full md:opacity-15;
+} */
+
+.available-online {
+  @apply flex w-fit m-auto py-2 px-4 md:px-5  items-center gap-3 justify-center font-mono;
+}
+
+.green-dot {
+  @apply w-2 h-2 bg-green-500 rounded-full;
+}
+
+.ripple-ring {
+  @apply absolute -inset-1 rounded-full bg-green-500 opacity-40 animate-ping;
+}
+
+.available-text {
+  @apply text-white text-[12px] md:text-sm font-medium tracking-wide;
+}
+
+/* Heading */
+.heading {
+  @apply text-center;
+}
+
+.hero-span1 {
+  @apply text-gray-100 shadow-gray-100 tracking-tight text-4xl md:text-6xl font-semibold;
+}
+
+.hero-span2 {
+  @apply text-gray-100 shadow-gray-100 tracking-tight font-bold text-4xl md:text-9xl;
+}
+
+.hero-span3 {
+  @apply text-[#d0e5ff] text-4xl md:text-9xl font-bodoni tracking-tighter font-bold;
+}
+
+.hero-desciption {
+  @apply text-[10px] md:text-[16px] font-medium md:font-medium text-[#8797ad] text-center leading-4 md:leading-8 tracking-wider;
+}
+
+.hero-num-wrapper {
+  @apply flex gap-5 md:gap-10 items-center justify-center;
+}
+
+.num-wrapper {
+  @apply flex flex-col items-center justify-center;
+}
+
+.hero-num {
+  @apply text-xl md:text-4xl text-gray-200 font-bold;
+}
+
+.hero-num-desc {
+  @apply text-[12px] md:text-sm text-gray-400 font-medium tracking-wide;
+}
+
+/* Animation Scroll Bar */
+/* Parent — provides the shared center for both bars */
+ .animation-scroll-wrapper {
+  @apply relative overflow-hidden;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  height: 160px;
+}
+
+/* Base styles shared by both bars */
+.animation-scroll-bar1,
+.animation-scroll-bar2 {
+  @apply absolute top-1/2 left-1/2 overflow-hidden 
+         bg-[#090a0f] outline-1 outline-[#222534] py-3;
+  width: 100vw;
+  transform-origin: center center;
+}
+
+/* Front bar — rotated counter-clockwise, faster */
+.animation-scroll-bar1 {
+  transform: translate(-50%, -50%) rotate(-3deg);
+  z-index: 10;
+}
+
+/* Back bar — rotated clockwise, slower, dimmed */
+.animation-scroll-bar2 {
+  transform: translate(-50%, -50%) rotate(3deg);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.overlay-fade-1 {
+  @apply absolute left-0 top-0 h-full w-16 md:w-32 
+         bg-gradient-to-r from-[#090a0f] to-transparent 
+         z-10 pointer-events-none;
+}
+
+.overlay-fade-2 {
+  @apply absolute right-0 top-0 h-full w-16 md:w-32 
+         bg-gradient-to-l from-[#090a0f] to-transparent 
+         z-10 pointer-events-none;
+}
+
+.animation-text {
+  @apply shrink-0 py-4 text-[#d0e5ff] font-medium 
+         text-[12px] md:text-[15px] whitespace-nowrap;
+}
+
+@layer utilities {
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .animate-scroll-fast {
+    animation: scroll-left 35s linear infinite;
+    width: max-content;
+    will-change: transform;
+  }
+
+  .animate-scroll-slow {
+    animation: scroll-right 45s linear infinite;
+    width: max-content;
+    will-change: transform;
+  }
+}
+
+/* About Page */
+.about-section {
+  @apply flex flex-col gap-8 md:gap-10 mb-10 md:mt-30;
+}
+
+.about-heading {
+  @apply flex flex-col text-center;
+}
+
+.about-heading h1 {
+  @apply text-left font-mono tracking-tight text-[#c8d6ff] text-lg;
+}
+
+.about-heading h2 {
+  @apply text-left tracking-wide text-sm text-gray-400;
+}
+
+/* About Grid */
+.about-grid {
+  @apply grid grid-cols-1 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1.6fr)] gap-8 md:gap-12 items-start;
+}
+
+.about-grid-2 {
+  @apply flex flex-col gap-4;
+}
+
+/* Left column wrapper */
+.about-left {
+  @apply flex flex-col gap-4 w-full;
+}
+
+.about-img {
+  @apply w-full aspect-square object-cover rounded-3xl outline-1 outline-gray-700;
+}
+
+.about-para {
+  @apply flex flex-col gap-4 text-gray-400;
+}
+
+.about-span1 {
+  @apply text-gray-100 shadow-gray-100 tracking-tight text-5xl font-semibold;
+}
+
+.about-span2 {
+  @apply text-[#d0e5ff] text-5xl font-bodoni tracking-tighter font-bold;
+}
+
+.about-para p {
+  @apply text-[14px] sm:text-[16px] tracking-wide leading-6 sm:leading-7;
+}
+
+.about-skills-section {
+  @apply w-full mt-5 flex flex-col gap-4;
+}
+
+.about-skills-s {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.about-skills-s-btn {
+  @apply w-full flex flex-col md:gap-1 justify-center text-shadow-2xs text-[14px] sm:text-[16px] tracking-wide rounded-xl px-3 md:px-4 py-2 md:py-3 outline-1 outline-gray-600 text-gray-300 bg-[#11131c];
+}
+
+.about-skills-s-title {
+  @apply text-[12px] md:text-[14px] text-[#c8d6ff] font-medium;
+}
+
+.about-skills-s-subtitle {
+  @apply text-[12px] md:text-[14px] font-semibold text-white;
+}
+
+/* About Extra Skills */
+.about-skills-wrapper {
+  @apply flex flex-wrap gap-2;
+}
+
+.about-skills-w-title {
+  @apply py-2 px-3 text-[#c8d6ff] tracking-wider font-semibold text-[10px] md:text-[11px] bg-[#11131c] outline-1 outline-gray-600 rounded-full;
+}
+
+/* Error Page */
+.error-page {
+  @apply flex flex-col m-auto;
+}
+
+.error-content {
+  @apply text-center flex flex-col gap-2 md:gap-4;
+}
+
+.error-code {
+  @apply text-3xl md:text-6xl text-white font-extrabold tracking-wide;
+}
+
+.error-description {
+  @apply text-white text-sm md:text-lg;
+}
+
+.error-btn {
+  @apply text-[12px] md:text-lg font-medium bg-gray-900 outline-2 outline-gray-600 text-white rounded-full px-4 py-2;
+}
+
+/* Footer */
+.footer-container {
+  @apply w-full bg-[#11131c] mt-auto;
+}
+
+footer {
+  @apply flex justify-between items-center py-6;
+}
+
+.copyright {
+  @apply text-[12px] md:text-sm font-medium text-gray-400;
+}
+
+.footer-right-side {
+  @apply text-gray-400 flex gap-1 md:gap-2 items-center;
+}
+
+.footer-icons {
+  @apply flex gap-1 md:gap-2;
+}
+
+.footer-ind-icon {
+  @apply bg-[#11131c] outline-1 outline-gray-400 rounded-full hover:text-white hover:outline-white transition-all cursor-pointer text-lg md:text-xl p-1;
+}
+
+.footer-nav {
+  @apply text-[12px] md:text-sm font-medium hover:text-white transition-all;
+}
