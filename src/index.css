@@ -161,7 +161,7 @@ h1 {
 }
 
 .about-heading h1 {
-  @apply text-left font-mono tracking-tight text-[#c8d6ff] text-lg;
+  @apply text-left font-mono tracking-tight text-[#c8d6ff] text-sm;
 }
 
 .about-heading h2 {
@@ -233,7 +233,7 @@ h1 {
 
 /* ================= Skills ================= */
 .skills {
-  @apply w-screen h-auto bg-[#10121b] mt-30 mb-10 py-20;
+  @apply w-screen h-auto bg-[#10121b] md:mt-30 py-20;
 }
 
 .skills-section {
@@ -246,11 +246,29 @@ h1 {
 }
 
 .skill-grid {
-  @apply flex justify-between gap-12;
+  @apply flex justify-between gap-5;
 }
 
 .skill-card {
-  @apply outline-2 outline-gray-600 rounded-xl p-8 flex flex-col gap-5;
+  @apply rounded-xl px-8 py-10 flex flex-col gap-10;
+  /* @apply backdrop-blur-lg transition-all duration-300; */
+  /* background-color: rgba(200, 214, 255, 0.05); */
+  @apply bg-[#c8d6ff]/5 backdrop-blur-lg;
+}
+
+/* Card 1 — Teal (your original) */
+.skill-card-1 {
+  @apply bg-linear-to-br/srgb from-[#1e404d] to-[#18333e];
+}
+
+/* Card 2 — Purple */
+.skill-card-2 {
+  @apply bg-linear-to-br/srgb from-[#3b3952] to-[#272637];
+}
+
+/* Card 3 — Warm Amber/Brown */
+.skill-card-3 {
+  @apply bg-linear-to-br/srgb from-[#49392e] to-[#382b23];
 }
 
 .skill-card:hover {
@@ -261,7 +279,24 @@ h1 {
   @apply text-2xl text-[#c8d6ff] font-bold tracking-tight;
 }
 
+.skill-card p {
+  @apply text-[#c8d6ff] text-sm opacity-70 tracking-wide;
+}
+
+.skill-list {
+  @apply flex gap-2 items-start flex-wrap;
+}
+
+.skill-item {
+  @apply text-[12px] bg-[#111d27] font-mono px-3 py-1 text-[#d0e5ff] outline-1 outline-gray-600 rounded-full;
+}
+
+
 /* ================= Projects ================= */
+.projects {
+  @apply md:mt-30 mb-30;
+}
+
 
 /* ================= Experience ================= */
 

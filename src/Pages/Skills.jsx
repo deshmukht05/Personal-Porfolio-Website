@@ -28,8 +28,8 @@ export const Skills = () => {
             {skillsData.map((curEle, id) => {
               const { title, subtitle } = curEle;
               return (
-                <div key={id} className="skill-card">
-                  <div className="flex flex-col gap-2">
+                <div key={id} className={`skill-card skill-card-${id+1}`}>
+                  <div className="flex flex-col gap-4">
                     <h3>{title}</h3>
                     <p>{subtitle}</p>
                   </div>
