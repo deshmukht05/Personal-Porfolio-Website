@@ -153,7 +153,7 @@ h1 {
 
 /* ================= About Page ================= */
 .about-section {
-  @apply flex flex-col gap-8 md:gap-10 mb-10 md:mt-30;
+  @apply flex flex-col gap-10 md:gap-10 mb-10 md:mt-30;
 }
 
 .about-heading {
@@ -291,12 +291,63 @@ h1 {
   @apply text-[12px] bg-[#111d27] font-mono px-3 py-1 text-[#d0e5ff] outline-1 outline-gray-600 rounded-full;
 }
 
-
 /* ================= Projects ================= */
 .projects {
   @apply md:mt-30 mb-30;
 }
 
+.project-grid {
+  @apply flex flex-col gap-8;
+}
+
+.project-card {
+  @apply flex flex-col md:flex-row gap-8 items-stretch;
+}
+
+.project-card:hover {
+  @apply -translate-y-1.5 transition-all duration-300;
+}
+
+.project-card-right {
+  @apply flex flex-col gap-6 flex-1 justify-center;
+}
+
+.project-img {
+  @apply relative w-full md:w-1/2 aspect-video overflow-hidden rounded-xl shrink-0;
+}
+
+.project-card img {
+  @apply w-full h-full object-cover rounded-xl;
+}
+
+.project-img-overlay {
+  @apply absolute inset-0 pointer-events-none;
+  @apply bg-linear-to-r/srgb from-[#11131c]/10 to-[#111d27]/20;
+}
+
+.project-card .category {
+  @apply font-mono text-sm text-[#8797ad] uppercase;
+}
+
+.project-card .title {
+  @apply text-2xl md:text-3xl text-white font-semibold;
+}
+
+.project-card .description {
+  @apply text-[#8797ad] leading-relaxed;
+}
+
+.project-card .url {
+  @apply bg-[#c8d6ff] w-fit rounded-sm;
+}
+
+.url button {
+  @apply text-[#11131c] py-2 px-8 font-medium cursor-pointer;
+}
+
+.horizontal-line {
+  @apply border-gray-700;
+}
 
 /* ================= Experience ================= */
 

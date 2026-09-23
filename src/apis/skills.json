@@ -27,19 +27,13 @@
         "subtitle" : "Creating the data and server foundations behind web applications.",
         "skills" : [
             {
-                "content": "React"
+                "content": "MySQL"
             },
             {
-                "content" : "HTML5"
+                "content" : "MongoDB"
             },
             {
-                "content" : "CSS3"
-            },
-            {
-                "content" : "Tailwind CSS"
-            },
-            {
-                "content" : "JavaScript"
+                "content" : "REST APIs"
             }
         ]
     },
@@ -49,19 +43,19 @@
         "subtitle" : "Managing reliable workflows, collaboration, and project delivery.",
         "skills" : [
             {
-                "content": "React"
+                "content": "Git"
             },
             {
-                "content" : "HTML5"
+                "content" : "GitHub"
             },
             {
-                "content" : "CSS3"
+                "content" : "VS Code"
             },
             {
-                "content" : "Tailwind CSS"
+                "content" : "IntelliJ"
             },
             {
-                "content" : "JavaScript"
+                "content" : "Figma"
             }
         ]
     }

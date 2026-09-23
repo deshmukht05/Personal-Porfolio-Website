@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "img": "projects/library.svg",
+    "category": "Software",
+    "title": "Library Management System",
+    "description": "A console-based Java Library Management System for managing books, members, borrowing, returning, and searching operations using object-oriented programming and ArrayList collections.",
+    "url": "https://github.com/deshmukht05/Library-Management-System.git",
+    "content": [
+      {
+        "type": "Java"
+      },
+      {
+        "type": "Encapsulation"
+      },
+      {
+        "type": "ArrayList"
+      },
+      {
+        "type": "Inheritence"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "img": "projects/students.svg",
+    "category": "Software",
+    "title": "Student Management System",
+    "description": "A console-based Java Student Management System for adding, viewing, searching, updating, and deleting student records using object-oriented programming and ArrayList collections.",
+    "url": "https://github.com/deshmukht05/Student-Management-System.git",
+    "content": [
+      {
+        "type": "Java"
+      },
+      {
+        "type": "Encapsulation"
+      },
+      {
+        "type": "ArrayList"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "img": "projects/worldAtlas.png",
+    "category": "Web Application",
+    "title": "World Atlas",
+    "description": "Built an interactive world atlas covering 195+ countries with live country data fetched via REST APIs. Implemented client-side routing with React Router and integrated Axios for efficient, reusable data fetching.",
+    "url": "https://github.com/deshmukht05/World_Atlas_ReactJS.git",
+    "content": [
+      {
+        "type": "ReactJS"
+      }
+    ]
+  }
+]
