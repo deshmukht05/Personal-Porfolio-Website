@@ -8,6 +8,10 @@
   --font-bodoni: "Bodoni Seventytwo ITC Bold Italic", serif;
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 body {
   @apply bg-[#090a0f] font-plus h-full m-0 p-0;
 }
@@ -67,7 +71,7 @@ body {
 }
 
 .inactive-tab {
-  @apply flex items-center justify-center p-2 text-gray-400 hover:text-gray-200 transition-all duration-300;
+  @apply flex items-center justify-center p-2 hover:rounded-full hover:bg-[#353a4e] text-gray-400 hover:text-gray-200 transition-all duration-300;
 }
 
 /* ================= Navbar ================= */

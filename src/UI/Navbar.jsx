@@ -1,21 +1,14 @@
-import {
-  Brain,
-  Briefcase,
-  BriefcaseBusiness,
-  Folder,
-  HomeIcon,
-  Mail,
-} from "lucide-react";
+import { Brain, Folder, HomeIcon, Info, Mail } from "lucide-react";
 import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [activeTab, setActiveTab] = useState("home");
+  // const [showMenu, setShowMenu] = useState(false);
 
-  const handleButtonToggle = () => {
-    setShowMenu(!showMenu);
-  };
+  // const handleButtonToggle = () => {
+  //   setShowMenu(!showMenu);
+  // };
 
   return (
     <div className="header-container">
@@ -25,12 +18,11 @@ export const NavBar = () => {
         <ul>
           <li>
             <NavLink
-              to="/"
-              className={({ isActive }) =>
-                `group relative flex items-center justify-center ${
-                  isActive ? "active-tab" : "inactive-tab"
-                }`
-              }
+              to="/#home"
+              onClick={() => setActiveTab("home")}
+              className={`group relative flex items-center justify-center ${
+                activeTab === "home" ? "active-tab" : "inactive-tab"
+              }`}
             >
               <HomeIcon />
               <span
@@ -48,14 +40,13 @@ export const NavBar = () => {
 
           <li>
             <NavLink
-              to="/experience"
-              className={({ isActive }) =>
-                `group relative flex items-center justify-center ${
-                  isActive ? "active-tab" : "inactive-tab"
-                }`
-              }
+              to="/#about"
+              onClick={() => setActiveTab("about")}
+              className={`group relative flex items-center justify-center ${
+                activeTab === "about" ? "active-tab" : "inactive-tab"
+              }`}
             >
-              <BriefcaseBusiness />
+              <Info />
               <span
                 className="absolute top-11 left-1/2 -translate-x-1/2 
                  whitespace-nowrap rounded-md bg-[#11131c] px-2 py-1.5 
@@ -64,19 +55,18 @@ export const NavBar = () => {
                  pointer-events-none group-hover:opacity-100 
                  outline-1 outline-gray-600"
               >
-                Experience
+                About
               </span>
             </NavLink>
           </li>
 
           <li>
             <NavLink
-              to="/skills"
-              className={({ isActive }) =>
-                `group relative flex items-center justify-center ${
-                  isActive ? "active-tab" : "inactive-tab"
-                }`
-              }
+              to="/#skills"
+              onClick={() => setActiveTab("skills")}
+              className={`group relative flex items-center justify-center ${
+                activeTab === "skills" ? "active-tab" : "inactive-tab"
+              }`}
             >
               <Brain />
               <span
@@ -94,12 +84,11 @@ export const NavBar = () => {
 
           <li>
             <NavLink
-              to="/projects"
-              className={({ isActive }) =>
-                `group relative flex items-center justify-center ${
-                  isActive ? "active-tab" : "inactive-tab"
-                }`
-              }
+              to="/#projects"
+              onClick={() => setActiveTab("projects")}
+              className={`group relative flex items-center justify-center ${
+                activeTab === "projects" ? "active-tab" : "inactive-tab"
+              }`}
             >
               <Folder />
               <span
@@ -117,12 +106,11 @@ export const NavBar = () => {
 
           <li>
             <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                `group relative flex items-center justify-center ${
-                  isActive ? "active-tab" : "inactive-tab"
-                }`
-              }
+              to="/#contact"
+              onClick={() => setActiveTab("contact")}
+              className={`group relative flex items-center justify-center ${
+                activeTab === "contact" ? "active-tab" : "inactive-tab"
+              }`}
             >
               <Mail />
               <span
