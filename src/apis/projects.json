@@ -50,6 +50,15 @@
     "content": [
       {
         "type": "ReactJS"
+      },
+      {
+        "type" : "React Router"
+      },
+      {
+        "type" : "AXIOS"
+      },
+      {
+        "type": "REST API"
       }
     ]
   }

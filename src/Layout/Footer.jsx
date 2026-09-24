@@ -1,9 +1,10 @@
-import { FooterUI } from "../UI/FooterUI"
+import { FooterUI } from "../UI/FooterUI";
 
 export const Footer = () => {
-    return (
+  return (
     <div className="footer-container">
-        <FooterUI />
+      <hr className="horizontal-line" />
+      <FooterUI />
     </div>
-)
-}
+  );
+};

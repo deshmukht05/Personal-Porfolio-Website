@@ -1,7 +1,5 @@
 import { CgCodeSlash, CgProfile } from "react-icons/cg";
-import { ImProfile } from "react-icons/im";
 import { MdOutlineEmail } from "react-icons/md";
-import { RiProfileLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 
 export const FooterUI = () => {
@@ -24,8 +22,7 @@ export const FooterUI = () => {
         </div>
         <span className="text-gray-400">|</span>
         <div className="flex gap-1 md:gap-2">
-          <NavLink className="footer-nav">Privacy</NavLink>
-          <NavLink className="footer-nav">Terms</NavLink>
+          <p className="copyright">Developed and designed with care.</p>
         </div>
       </div>
     </footer>

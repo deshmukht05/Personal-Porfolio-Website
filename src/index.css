@@ -376,7 +376,7 @@ h1 {
 
 /* ================= Footer ================= */
 .footer-container {
-  @apply w-full bg-[#11131c] mt-auto;
+  @apply w-full mt-auto;
 }
 
 footer {
@@ -384,7 +384,7 @@ footer {
 }
 
 .copyright {
-  @apply text-[12px] md:text-sm font-medium text-gray-400;
+  @apply text-[12px] md:text-sm font-mono font-medium tracking-tight text-[#525458];
 }
 
 .footer-right-side {
