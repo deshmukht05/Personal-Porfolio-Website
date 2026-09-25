@@ -165,7 +165,7 @@ h1 {
 }
 
 .about-heading h1 {
-  @apply text-left font-mono tracking-tight text-[#c8d6ff] text-sm;
+  @apply text-left font-mono text-[#c8d6ff] text-sm;
 }
 
 .about-heading h2 {
@@ -195,7 +195,7 @@ h1 {
 }
 
 .about-span1 {
-  @apply text-gray-100 shadow-gray-100 tracking-tight text-6xl font-semibold;
+  @apply text-gray-100 shadow-gray-100 tracking-tight leading-16 text-6xl font-semibold;
 }
 
 .about-span2 {
@@ -297,7 +297,7 @@ h1 {
 
 /* ================= Projects ================= */
 .projects {
-  @apply md:mt-30 mb-30;
+  @apply md:mt-30;
 }
 
 .project-grid {
@@ -329,19 +329,19 @@ h1 {
   @apply bg-linear-to-r/srgb from-[#11131c]/10 to-[#111d27]/20;
 }
 
-.project-card .category {
+.category {
   @apply font-mono text-sm text-[#8797ad] uppercase;
 }
 
-.project-card .title {
+.title {
   @apply text-2xl md:text-3xl text-white font-semibold;
 }
 
-.project-card .description {
+.description {
   @apply text-[#8797ad] leading-relaxed;
 }
 
-.project-card .url {
+.url {
   @apply bg-[#c8d6ff] w-fit rounded-sm;
 }
 
@@ -356,6 +356,80 @@ h1 {
 /* ================= Experience ================= */
 
 /* ================= Contact ================= */
+.contact {
+  @apply w-screen h-auto bg-[#10121b] md:mt-30 py-20;
+}
+
+.contact-section {
+  @apply flex flex-col gap-10;
+}
+
+.contact-grid {
+  @apply grid grid-cols-2;
+}
+
+.contact-span1 {
+  @apply text-gray-100 shadow-gray-100 tracking-tight leading-18 text-7xl font-semibold;
+}
+
+.contact-description {
+  @apply text-sm text-[#8797ad] leading-relaxed;
+}
+
+.contact-email-description {
+  @apply text-[16px] text-gray-100 leading-relaxed max-w-xs;
+}
+
+.contact-email {
+  @apply w-fit flex items-center gap-2;
+}
+
+.icon {
+  @apply text-gray-100 size-4.5;
+}
+
+.contact-btn {
+  @apply w-fit bg-[#c8d6ff] flex items-center cursor-pointer gap-2 py-3 px-5 rounded;
+}
+
+.contact-btn button {
+  @apply text-[#11131c] text-[15px] font-semibold cursor-pointer;
+}
+
+.contact-btn .btn-icon {
+  @apply size-5 text-[#11131c];
+}
+
+.link-icon {
+  @apply text-gray-300 hover:text-gray-100 size-6 drop-shadow-2xl cursor-pointer;
+  @apply hover:-translate-y-0.5 transition-all duration-200;
+}
+
+/* ================ Form ================ */
+form {
+  @apply bg-[#12101b] w-full p-10 outline-3 outline-[#212129] rounded-2xl flex flex-col gap-8 shadow-2xl/20;
+  @apply hover:-translate-y-1.5 transition-all duration-200;
+}
+
+.form-grid {
+  @apply flex flex-row gap-8 justify-between;
+}
+
+.contact-label {
+  @apply w-full flex flex-col gap-2;
+}
+
+label {
+  @apply text-[14px] font-semibold text-gray-100;
+}
+
+input {
+  @apply text-[#c8d6ff] text-[14px] bg-[#10121b] focus:outline-[#c8d6ff] outline-2 outline-gray-700 py-3 px-4 rounded transition-all duration-100;
+}
+
+textarea {
+  @apply text-[#c8d6ff] bg-[#10121b] text-[14px] focus:outline-[#c8d6ff] row-auto col-end-13 outline-2 outline-gray-700 py-2 px-3 rounded transition-all duration-100;
+}
 
 /* ================= Error Page ================= */
 .error-page {

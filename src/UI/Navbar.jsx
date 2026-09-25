@@ -31,7 +31,7 @@ export const NavBar = () => {
                  text-[10px] font-semibold text-[#c8d6ff] 
                  opacity-0 transition-opacity duration-200 
                  pointer-events-none group-hover:opacity-100 
-                 outline-1 outline-gray-600"
+                 outline-1 outline-gray-600 z-50"
               >
                 Home
               </span>
@@ -53,7 +53,7 @@ export const NavBar = () => {
                  text-[10px] font-semibold text-[#c8d6ff] 
                  opacity-0 transition-opacity duration-200 
                  pointer-events-none group-hover:opacity-100 
-                 outline-1 outline-gray-600"
+                 outline-1 outline-gray-600 z-50"
               >
                 About
               </span>
@@ -75,7 +75,7 @@ export const NavBar = () => {
                  text-[10px] font-semibold text-[#c8d6ff] 
                  opacity-0 transition-opacity duration-200 
                  pointer-events-none group-hover:opacity-100 
-                 outline-1 outline-gray-600"
+                 outline-1 outline-gray-600 z-50"
               >
                 Skills
               </span>
@@ -97,7 +97,7 @@ export const NavBar = () => {
                  text-[10px] font-semibold text-[#c8d6ff] 
                  opacity-0 transition-opacity duration-200 
                  pointer-events-none group-hover:opacity-100 
-                 outline-1 outline-gray-600"
+                 outline-1 outline-gray-600 z-50"
               >
                 Projects
               </span>
@@ -119,7 +119,7 @@ export const NavBar = () => {
                  text-[10px] font-semibold text-[#c8d6ff] 
                  opacity-0 transition-opacity duration-200 
                  pointer-events-none group-hover:opacity-100 
-                 outline-1 outline-gray-600"
+                 outline-1 outline-gray-600 z-50"
               >
                 Contact
               </span>
