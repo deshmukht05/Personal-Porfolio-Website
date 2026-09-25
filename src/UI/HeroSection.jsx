@@ -5,6 +5,9 @@ import { NavLink } from "react-router-dom";
 import { OrbitBackground } from "./OrbitBackground";
 
 export const HeroSection = () => {
+  const resumeUrl =
+    "https://drive.google.com/file/d/17Dk2VRRt51NQWBBr43FQeGaaQPp5Gedv/view?usp=sharing";
+
   return (
     <OrbitBackground>
       <div className="container">
@@ -43,19 +46,24 @@ export const HeroSection = () => {
           {/* Buttons */}
           <div className="flex gap-4 md:gap-6 items-center">
             <div className="cursor-pointer">
-              <NavLink to="/" className="outline-btn">
+              <NavLink to="/#projects" className="outline-btn">
                 <CgCodeSlash className="hero-icon" />
                 <span>View Projects</span>
               </NavLink>
             </div>
             <div className="cursor-pointer">
-              <NavLink to="/" className="outline-btn">
+              <NavLink to="/#contact" className="outline-btn">
                 <MdEmail className="hero-icon" />
                 <span>Contact Me</span>
               </NavLink>
             </div>
             <div className="cursor-pointer">
-              <NavLink to="/" className="primary-btn">
+              <NavLink
+                to={resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="primary-btn"
+              >
                 <Download className="hero-resume-icon text-[#090a0f]" />
                 <span className="text-[#090a0f]">Resume</span>
               </NavLink>
