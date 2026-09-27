@@ -388,12 +388,13 @@ h1 {
   @apply text-gray-100 size-4.5;
 }
 
+
 .contact-btn {
-  @apply w-fit bg-[#c8d6ff] flex items-center cursor-pointer gap-2 py-3 px-5 rounded;
+  @apply bg-[#c8d6ff] flex items-center gap-2 py-3 px-5 rounded;
 }
 
-.contact-btn button {
-  @apply text-[#11131c] text-[15px] font-semibold cursor-pointer;
+.contact-btn {
+  @apply w-fit text-[#11131c] text-[15px] font-semibold leading-relaxed cursor-pointer;
 }
 
 .contact-btn .btn-icon {
@@ -402,7 +403,7 @@ h1 {
 
 .link-icon {
   @apply text-gray-300 hover:text-gray-100 size-6 drop-shadow-2xl cursor-pointer;
-  @apply hover:-translate-y-0.5 transition-all duration-200;
+  /* @apply hover:-translate-y-0.5 transition-all duration-200; */
 }
 
 /* ================ Form ================ */
@@ -412,7 +413,11 @@ form {
 }
 
 .form-grid {
-  @apply flex flex-row gap-8 justify-between;
+  @apply grid sm:grid-cols-2 gap-8;
+}
+
+.form-error {
+  @apply text-red-400 text-sm mt-2;
 }
 
 .contact-label {
@@ -480,6 +485,55 @@ footer {
 .footer-nav {
   @apply text-[12px] md:text-sm font-medium hover:text-white transition-all;
 }
+
+
+/* ================= Popup Overlay — darkens the background ================= */
+.popup-overlay {
+  @apply fixed inset-0 z-[100] flex items-center justify-center;
+  @apply bg-black/60 backdrop-blur-sm;
+  animation: popup-fade-in 0.2s ease-out;
+}
+
+/* Popup Box */
+.popup-box {
+  @apply flex flex-col items-center gap-3 px-10 py-8;
+  @apply bg-[#11131c] outline-2 outline-gray-700 rounded-2xl shadow-2xl;
+  @apply min-w-[320px] max-w-[90vw];
+  animation: popup-scale-in 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Tick Icon */
+.popup-icon {
+  @apply text-[#c8d6ff];
+  animation: popup-icon-pop 0.4s ease-out 0.15s backwards;
+}
+
+.popup-title {
+  @apply text-xl font-semibold text-white tracking-wide;
+}
+
+.popup-message {
+  @apply text-sm text-gray-400 text-center leading-relaxed;
+}
+
+/* Animations */
+@keyframes popup-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes popup-scale-in {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes popup-icon-pop {
+  0%   { transform: scale(0) rotate(-45deg); opacity: 0; }
+  60%  { transform: scale(1.2) rotate(5deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+
 
 /* ================= Animation Scroll Bar ================= */
 .animation-scroll-wrapper {
