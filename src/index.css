@@ -431,12 +431,12 @@ label {
 
 input {
   @apply text-[#c8d6ff] text-[14px] bg-[#10121b] focus:outline-[#c8d6ff] outline-2 outline-gray-700 py-3 px-4 rounded transition-all duration-100;
-  @apply placeholder:text-[14px] md:placeholder:text-[12px];
+  @apply placeholder:text-[12px] md:placeholder:text-[14px];
 }
 
 textarea {
   @apply text-[#c8d6ff] bg-[#10121b] text-[14px] focus:outline-[#c8d6ff] row-auto col-end-13 outline-2 outline-gray-700 py-2 px-3 rounded transition-all duration-100;
-  @apply placeholder:text-[14px] md:placeholder:text-[12px];
+  @apply placeholder:text-[12px] md:placeholder:text-[14px];
 }
 
 /* ================= Error Page ================= */
