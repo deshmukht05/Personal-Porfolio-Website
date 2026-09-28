@@ -100,7 +100,7 @@ h1 {
 
 /* ================= Hero Section ================= */
 .hero-section {
-  @apply flex mt-15 mb-15 md:mt-10 md:mb-10 flex-col gap-10 items-center justify-center;
+  @apply flex mt-15 mb-15 md:mt-5 md:mb-5 lg:mt-10 lg:mb-10 flex-col gap-10 items-center justify-center;
 }
 
 .available-online {
@@ -616,12 +616,12 @@ footer {
 
 /* ================= Orbit Background (Circular) ================= */
 .orbit-scene {
-  @apply relative w-full md:min-h-screen overflow-hidden bg-[#090a0f] flex items-center justify-center isolate;
+  @apply relative w-full h-auto lg:min-h-screen overflow-hidden bg-[#090a0f] flex items-center justify-center isolate;
 }
 
 /* ---------- Orbit Background ---------- */
 .orbit-glow {
-  @apply absolute top-1/2 left-1/2 w-[800px] h-[800px] 
+  @apply absolute top-1/2 left-1/2 w-200 h-200 
          -translate-x-1/2 -translate-y-1/2 
          blur-[50px] pointer-events-none z-[1];
   background: radial-gradient(
