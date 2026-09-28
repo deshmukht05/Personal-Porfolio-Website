@@ -20,7 +20,7 @@ export const Contact = () => {
 
           {/* Sub Heading */}
           <div className="contact-grid">
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-4 md:gap-5">
               <p className="contact-span1">
                 Let's make something{" "}
                 <span className="skills-span1">remarkable.</span>

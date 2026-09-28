@@ -40,12 +40,12 @@ body {
 }
 
 .primary-btn {
-  @apply text-[12px] md:text-[16px] bg-[#d0e5ff] font-medium flex items-center gap-2 rounded-xl px-4 py-2;
+  @apply text-[9px] md:text-[16px] bg-[#d0e5ff] font-medium flex items-center gap-1 md:gap-2 rounded md:rounded-xl px-3 md:px-4 py-2;
   /* background: linear-gradient(105deg, #3b82f6, #7c3aed); */
 }
 
 .hero-resume-icon {
-  @apply text-lg md:text-lg text-shadow-2xs;
+  @apply size-3 md:size-5 text-shadow-2xs;
 }
 
 .secondary-btn {
@@ -53,16 +53,16 @@ body {
 }
 
 .outline-btn {
-  @apply text-[12px] md:text-[16px] font-medium flex items-center gap-2 bg-[#11131c] outline-2 outline-[#222534] text-[#d0e5ff] rounded-xl px-4 py-2;
+  @apply text-[9px] md:text-[16px] font-medium flex items-center gap-1 md:gap-2 bg-[#11131c] outline-2 outline-[#222534] text-[#d0e5ff] rounded md:rounded-xl px-3 md:px-4 py-2;
 }
 
 .hero-icon {
-  @apply text-lg md:text-lg text-[#d0e5ff] text-shadow-2xs;
+  @apply size-3 md:size-5 text-[#d0e5ff] text-shadow-2xs;
 }
 
 /* ================= Active Tab ================= */
 .active-tab {
-  @apply flex items-center justify-center p-2 rounded-full bg-[#c8d6ff] text-[#11131c] transition-all duration-300 cursor-pointer;
+  @apply flex items-center justify-center p-2 rounded-full bg-[#c8d6ff] text-[#11131c] transition-all duration-300 cursor-pointer size-9 md:size-10;
 }
 
 .active-tab svg {
@@ -71,22 +71,22 @@ body {
 }
 
 .inactive-tab {
-  @apply flex items-center justify-center p-2 hover:rounded-full hover:bg-[#353a4e] text-gray-400 hover:text-gray-200 transition-all duration-300;
+  @apply flex items-center justify-center p-2 hover:rounded-full hover:bg-[#353a4e] text-gray-400 hover:text-gray-200 transition-all duration-300 size-9 md:size-10;
 }
 
 /* ================= Navbar ================= */
 .header-container {
-  @apply w-full py-10 place-items-center bg-transparent;
+  @apply w-full py-10 place-items-center;
 }
 
 .navbar {
-  @apply fixed top-4 left-1/2 -translate-x-1/2 z-50 max-w-fit px-4 py-3 bg-[#11131c] rounded-full outline-2 outline-[#222534]/5;
+  @apply fixed top-4 left-1/2 -translate-x-1/2 z-50 max-w-fit px-2 md:px-4 py-2 md:py-3 bg-[#100f1c] rounded-full outline-2 outline-[#222534]/5;
 
   @apply bg-[#c8d6ff]/5 backdrop-blur-lg;
 }
 
 ul {
-  @apply flex justify-center items-center gap-8;
+  @apply flex justify-center items-center gap-5 md:gap-8;
 }
 
 li {
@@ -97,13 +97,14 @@ h1 {
   @apply text-[#d0e5ff] text-4xl;
 }
 
+
 /* ================= Hero Section ================= */
 .hero-section {
-  @apply flex md:mb-10 md:mt-10 flex-col gap-8 md:gap-10 items-center justify-center;
+  @apply flex mt-15 mb-15 md:mt-10 md:mb-10 flex-col gap-10 items-center justify-center;
 }
 
 .available-online {
-  @apply flex w-fit m-auto py-2 px-4 md:px-5  items-center gap-3 justify-center font-mono;
+  @apply flex w-fit m-auto py-2 md:px-5  items-center gap-3 justify-center font-mono;
 }
 
 .green-dot {
@@ -124,15 +125,15 @@ h1 {
 }
 
 .hero-span1 {
-  @apply text-gray-100 shadow-gray-100 tracking-tight text-4xl md:text-6xl font-semibold;
+  @apply text-gray-100 shadow-gray-100 tracking-tight text-2xl md:text-4xl lg:text-6xl font-semibold;
 }
 
 .hero-span2 {
-  @apply text-gray-100 shadow-gray-100 tracking-tight font-bold text-4xl md:text-9xl;
+  @apply text-gray-100 shadow-gray-100 tracking-tight font-bold text-4xl md:text-7xl lg:text-9xl;
 }
 
 .hero-span3 {
-  @apply text-[#d0e5ff] text-4xl md:text-9xl font-bodoni tracking-tighter font-bold;
+  @apply text-[#d0e5ff] text-4xl md:text-7xl lg:text-9xl font-bodoni tracking-tighter font-bold;
 }
 
 .hero-desciption {
@@ -152,12 +153,12 @@ h1 {
 }
 
 .hero-num-desc {
-  @apply text-[12px] md:text-sm text-gray-400 font-medium tracking-wide;
+  @apply text-[11px] md:text-sm text-gray-400 font-medium tracking-wide;
 }
 
 /* ================= About Page ================= */
 .about-section {
-  @apply flex flex-col gap-10 md:gap-10 mb-10 md:mt-30;
+  @apply flex flex-col gap-10 md:gap-10 mt-20 md:mt-30;
 }
 
 .about-heading {
@@ -178,7 +179,7 @@ h1 {
 }
 
 .about-grid-2 {
-  @apply flex flex-col gap-4;
+  @apply flex flex-col gap-2 md:gap-4;
 }
 
 /* Left column wrapper */
@@ -195,15 +196,15 @@ h1 {
 }
 
 .about-span1 {
-  @apply text-gray-100 shadow-gray-100 tracking-tight leading-16 text-6xl font-semibold;
+  @apply text-gray-100 shadow-gray-100 tracking-tight md:leading-16 text-3xl md:text-6xl font-semibold;
 }
 
 .about-span2 {
-  @apply text-[#d0e5ff] text-6xl font-bodoni tracking-tight font-bold;
+  @apply text-[#d0e5ff] text-3xl md:text-6xl font-bodoni tracking-tight font-bold;
 }
 
 .about-para p {
-  @apply text-[14px] sm:text-[16px] tracking-wide leading-6 sm:leading-7;
+  @apply text-[12px] sm:text-[16px] tracking-wide leading-6 sm:leading-7;
 }
 
 .about-skills-section {
@@ -237,24 +238,24 @@ h1 {
 
 /* ================= Skills ================= */
 .skills {
-  @apply w-screen h-auto bg-[#10121b] md:mt-30 py-20;
+  @apply w-screen h-auto bg-[#10121b] mt-20 md:mt-30 scroll-px-px py-15 md:py-20;
 }
 
 .skills-section {
-  @apply flex flex-col gap-10;
+  @apply flex flex-col gap-5 md:gap-10;
 }
 
 .skills-span1 {
-  @apply text-[#d0e5ff] text-7xl font-bodoni tracking-tight font-bold;
+  @apply text-[#d0e5ff] text-4xl md:text-7xl font-bodoni tracking-tight font-bold;
   padding: 0 10px 0 0;
 }
 
 .skill-grid {
-  @apply flex justify-between gap-5;
+  @apply flex flex-wrap md:flex-nowrap justify-between gap-5;
 }
 
 .skill-card {
-  @apply rounded-xl px-8 py-10 flex flex-col gap-10;
+  @apply rounded-xl px-4 py-5 md:px-8 md:py-10 flex flex-col gap-5 md:gap-10;
   /* @apply backdrop-blur-lg transition-all duration-300; */
   /* background-color: rgba(200, 214, 255, 0.05); */
   @apply bg-[#c8d6ff]/5 backdrop-blur-lg;
@@ -297,7 +298,7 @@ h1 {
 
 /* ================= Projects ================= */
 .projects {
-  @apply md:mt-30;
+  @apply mt-20 md:mt-30;
 }
 
 .project-grid {
@@ -305,7 +306,7 @@ h1 {
 }
 
 .project-card {
-  @apply flex flex-col md:flex-row gap-8 items-stretch;
+  @apply flex flex-col md:flex-row gap-5 md:gap-8 items-stretch;
 }
 
 .project-card:hover {
@@ -313,7 +314,7 @@ h1 {
 }
 
 .project-card-right {
-  @apply flex flex-col gap-6 flex-1 justify-center;
+  @apply flex flex-col gap-4 md:gap-6 flex-1 justify-center;
 }
 
 .project-img {
@@ -338,7 +339,7 @@ h1 {
 }
 
 .description {
-  @apply text-[#8797ad] leading-relaxed;
+  @apply text-[14px] md:text-[16px] text-[#8797ad] leading-relaxed;
 }
 
 .url {
@@ -346,7 +347,7 @@ h1 {
 }
 
 .url button {
-  @apply text-[#11131c] py-2 px-8 font-medium cursor-pointer;
+  @apply text-[#11131c] text-[14px] md:text-[16px] py-2 px-6 md:px-8 font-medium cursor-pointer;
 }
 
 .horizontal-line {
@@ -357,19 +358,19 @@ h1 {
 
 /* ================= Contact ================= */
 .contact {
-  @apply w-screen h-auto bg-[#10121b] md:mt-30 py-20;
+  @apply w-screen h-auto bg-[#10121b] mt-20 md:mt-30 py-15 md:py-20;
 }
 
 .contact-section {
-  @apply flex flex-col gap-10;
+  @apply flex flex-col gap-5 md:gap-10;
 }
 
 .contact-grid {
-  @apply grid grid-cols-2;
+  @apply flex flex-wrap gap-10 md:grid md:grid-cols-2;
 }
 
 .contact-span1 {
-  @apply text-gray-100 shadow-gray-100 tracking-tight leading-18 text-7xl font-semibold;
+  @apply text-gray-100 shadow-gray-100 tracking-tight md:leading-18 text-4xl md:text-7xl font-semibold;
 }
 
 .contact-description {
@@ -394,11 +395,11 @@ h1 {
 }
 
 .contact-btn {
-  @apply w-fit text-[#11131c] text-[15px] font-semibold leading-relaxed cursor-pointer;
+  @apply w-fit text-[#11131c] text-[14px] md:text-[16px] font-semibold leading-relaxed cursor-pointer;
 }
 
 .contact-btn .btn-icon {
-  @apply size-5 text-[#11131c];
+  @apply size-4.5 md:size-5 text-[#11131c];
 }
 
 .link-icon {
@@ -430,10 +431,12 @@ label {
 
 input {
   @apply text-[#c8d6ff] text-[14px] bg-[#10121b] focus:outline-[#c8d6ff] outline-2 outline-gray-700 py-3 px-4 rounded transition-all duration-100;
+  @apply placeholder:text-[14px] md:placeholder:text-[12px];
 }
 
 textarea {
   @apply text-[#c8d6ff] bg-[#10121b] text-[14px] focus:outline-[#c8d6ff] row-auto col-end-13 outline-2 outline-gray-700 py-2 px-3 rounded transition-all duration-100;
+  @apply placeholder:text-[14px] md:placeholder:text-[12px];
 }
 
 /* ================= Error Page ================= */
@@ -537,10 +540,8 @@ footer {
 
 /* ================= Animation Scroll Bar ================= */
 .animation-scroll-wrapper {
-  @apply relative overflow-hidden;
-  width: 100vw;
+  @apply relative overflow-hidden w-screen h-30 md:h-40;
   margin-left: calc(50% - 50vw);
-  height: 160px;
 }
 
 /* Base styles shared by both bars */
@@ -554,30 +555,29 @@ footer {
 }
 
 .animation-scroll-bar1 {
-  transform: translate(-50%, -50%) rotate(-3deg);
+  @apply translate-x-[-50%] translate-y-[-50%] -rotate-4 md:-rotate-3;
   z-index: 10;
 }
 
 .animation-scroll-bar2 {
-  transform: translate(-50%, -50%) rotate(3deg);
-  opacity: 0.3;
+  @apply translate-x-[-50%] translate-y-[-50%] rotate-4 md:rotate-3 opacity-40 md:opacity-30;
   z-index: 0;
 }
 
 .overlay-fade-1 {
   @apply absolute left-0 top-0 h-full w-16 md:w-32 
-         bg-gradient-to-r from-[#090a0f] to-transparent 
+         bg-linear-to-r from-[#090a0f] to-transparent 
          z-10 pointer-events-none;
 }
 
 .overlay-fade-2 {
   @apply absolute right-0 top-0 h-full w-16 md:w-32 
-         bg-gradient-to-l from-[#090a0f] to-transparent 
+         bg-linear-to-l from-[#090a0f] to-transparent 
          z-10 pointer-events-none;
 }
 
 .animation-text {
-  @apply shrink-0 py-4 text-[#d0e5ff] font-mono
+  @apply shrink-0 py-2 md:py-4 text-[#d0e5ff] font-mono
          text-[12px] md:text-[15px] whitespace-nowrap;
 }
 
@@ -613,128 +613,127 @@ footer {
   }
 }
 
+
 /* ================= Orbit Background (Circular) ================= */
 .orbit-scene {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-  background: #090a0f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  isolation: isolate;
+  @apply relative w-full md:min-h-screen overflow-hidden bg-[#090a0f] flex items-center justify-center isolate;
 }
 
+/* ---------- Orbit Background ---------- */
 .orbit-glow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 800px;
-  height: 800px;
-  transform: translate(-50%, -50%);
+  @apply absolute top-1/2 left-1/2 w-[800px] h-[800px] 
+         -translate-x-1/2 -translate-y-1/2 
+         blur-[50px] pointer-events-none z-[1];
   background: radial-gradient(
     circle at center,
     rgba(139, 92, 246, 0.4) 10%,
     rgba(139, 92, 246, 0.15) 40%,
     transparent 70%
   );
-  filter: blur(50px);
-  pointer-events: none;
-  z-index: 1;
+}
+
+/* Tablet — soften the glow */
+@media (max-width: 1024px) {
+  .orbit-glow {
+    background: radial-gradient(
+      circle at center,
+      rgba(139, 92, 246, 0.28) 10%,
+      rgba(139, 92, 246, 0.1) 40%,
+      transparent 70%
+    );
+  }
+}
+
+/* Small tablet — soften further */
+@media (max-width: 768px) {
+  .orbit-glow {
+    background: radial-gradient(
+      circle at center,
+      rgba(139, 92, 246, 0.18) 10%,
+      rgba(139, 92, 246, 0.06) 40%,
+      transparent 70%
+    );
+  }
+}
+
+/* Mobile — very light */
+@media (max-width: 480px) {
+  .orbit-glow {
+    background: radial-gradient(
+      circle at center,
+      rgba(139, 92, 246, 0.02) 10%,
+      rgba(139, 92, 246, 0.03) 40%,
+      transparent 70%
+    );
+  }
 }
 
 /* Circular orbit container */
 .orbit-ellipse {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
+  @apply absolute top-1/2 left-1/2 w-0 h-0 
+         -translate-x-1/2 -translate-y-1/2 
+         pointer-events-none z-[2];
   transform: translate(-50%, -50%) scale(var(--orbit-scale, 1));
-  pointer-events: none;
-  z-index: 2;
 }
 
 .orbit-ring {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
+  @apply absolute top-0 left-0 w-0 h-0;
   animation: orbit-spin var(--duration) linear infinite;
 }
 
 /* Circular path line — visible ring for each orbit */
 .orbit-path {
-  position: absolute;
-  top: 0;
-  left: 0;
+  @apply absolute top-0 left-0 rounded-full 
+         border border-dashed border-[#c8d6ff]/12 
+         pointer-events-none;
   width: calc(var(--radius) * 2);
   height: calc(var(--radius) * 2);
   margin-left: calc(var(--radius) * -1);
   margin-top: calc(var(--radius) * -1);
-  border-radius: 9999px;
-  border: 1px dashed rgba(200, 214, 255, 0.12);
-  pointer-events: none;
-  /* No animation — the line stays still while icons revolve */
 }
 
 /* Position each icon on the circular path */
 .orbit-slot {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
+  @apply absolute top-0 left-0 w-0 h-0 origin-top-left;
   transform: rotate(var(--angle)) translateX(var(--radius));
-  transform-origin: 0 0;
 }
 
 /* Un-tilt the icon */
 .orbit-counter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
+  @apply absolute top-0 left-0 w-0 h-0 origin-top-left;
   transform: rotate(calc(-1 * var(--angle)));
-  transform-origin: 0 0;
 }
 
 /* The visible icon card */
 .orbit-icon-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 48px;
-  height: 48px;
-  margin-left: -24px;
-  margin-top: -24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(20, 22, 34, 0.55); /* lower bg opacity */
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
-  color: #d0e5ff;
-  opacity: 0.65; /* ↓ icon opacity (was 1) */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  @apply absolute top-0 left-0 w-12 h-12 -ml-6 -mt-6 
+         flex items-center justify-center 
+         rounded-xl 
+         bg-[#141622]/55 
+         border border-white/6 
+         text-[#d0e5ff] 
+         opacity-65 
+         backdrop-blur-[10px] 
+         pointer-events-none
+         transition-opacity duration-300 
+         origin-center;
   box-shadow:
     0 4px 20px rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  /* Counter the ring spin so the icon stays upright */
   animation: orbit-counter var(--duration) linear infinite;
-  transform-origin: center center;
-  transition: opacity 0.3s ease;
 }
 
 /* Optional: brighten on hover for interactivity */
 .orbit-icon-box:hover {
-  opacity: 0.7;
+  @apply opacity-70;
 }
 
+/* Content layer */
+.orbit-content {
+  @apply relative z-10 w-full;
+}
+
+/* ---------- Keyframes ---------- */
 @keyframes orbit-spin {
   from {
     transform: rotate(0deg);
@@ -753,32 +752,25 @@ footer {
   }
 }
 
-/* Content layer */
-.orbit-content {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-}
-
-/* Responsive scaling */
+/* ---------- Responsive scaling ---------- */
 @media (max-width: 1024px) {
   .orbit-scene {
     --orbit-scale: 0.8;
   }
 }
+
 @media (max-width: 768px) {
   .orbit-scene {
     --orbit-scale: 0.6;
   }
 }
+
 @media (max-width: 480px) {
   .orbit-scene {
     --orbit-scale: 0.45;
   }
+
   .orbit-icon-box {
-    width: 40px;
-    height: 40px;
-    margin-left: -20px;
-    margin-top: -20px;
+    @apply w-10 h-10 -ml-5 -mt-5;
   }
 }

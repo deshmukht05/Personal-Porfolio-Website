@@ -26,7 +26,7 @@ export const Projects = () => {
                 curEle;
 
               return (
-                <div key={index} className="flex flex-col gap-8">
+                <div key={index} className="flex flex-col gap-6 md:gap-8">
                   <hr className="horizontal-line" />
                   <div className="project-card">
                     <div className="project-img">

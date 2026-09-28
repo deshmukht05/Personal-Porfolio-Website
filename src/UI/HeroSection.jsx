@@ -24,7 +24,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Heading */}
-          <div className="flex flex-col gap-2 md:gap-6">
+          <div className="flex flex-col gap-6">
             <p className="heading">
               <span className="hero-span1">Hello, I'm</span>
               <br />
@@ -44,7 +44,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Buttons */}
-          <div className="flex gap-4 md:gap-6 items-center">
+          <div className="flex gap-3 md:gap-6 items-center">
             <div className="cursor-pointer">
               <NavLink to="/#projects" className="outline-btn">
                 <CgCodeSlash className="hero-icon" />
